@@ -8,5 +8,7 @@ import java.util.Optional;
 
 @Repository
 public interface WebsiteRepository extends CrudRepository<Website, Integer> {
-    Optional<Website> findByWebsite(String username);
+    Optional<Website> findByWebsite(String website);
+
+    Optional<Website> findByLogin(String username);
 }

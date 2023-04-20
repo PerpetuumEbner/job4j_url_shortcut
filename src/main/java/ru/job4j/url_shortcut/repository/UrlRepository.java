@@ -16,7 +16,7 @@ public interface UrlRepository extends CrudRepository<Url, Integer> {
 
     Optional<Url> findByShortUrl(String shortUrl);
 
-    List<Url> findAll();
+    Optional<Url> findByUrl(String url);
 
     @Modifying
     @Transactional

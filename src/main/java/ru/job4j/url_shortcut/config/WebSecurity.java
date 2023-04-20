@@ -18,7 +18,6 @@ import ru.job4j.url_shortcut.service.UserDetailsServiceImpl;
 import static ru.job4j.url_shortcut.filter.JWTAuthenticationFilter.REDIRECT;
 import static ru.job4j.url_shortcut.filter.JWTAuthenticationFilter.REGISTRATION;
 
-
 @EnableWebSecurity
 public class WebSecurity extends WebSecurityConfigurerAdapter {
     private final UserDetailsServiceImpl userDetailsService;
